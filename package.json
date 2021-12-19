@@ -1,0 +1,35 @@
+{
+  "name": "eb-lib",
+  "version": "1.0.0",
+  "description": "lib items for EasyBackend",
+  "main": ".commitlint.config.js",
+  "types": "build/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "rm -rf ./build && tsc",
+    "lint": "eslint . --ext .js,.ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EasyBackend/EB-lib.git"
+  },
+  "author": "Koren Ben ezri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EasyBackend/EB-lib/issues"
+  },
+  "homepage": "https://github.com/EasyBackend/EB-lib#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "morgan": "^1.10.0",
+    "util": "^0.12.4",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.0"
+  }
+}
