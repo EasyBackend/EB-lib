@@ -1,15 +1,22 @@
 {
   "name": "eb-lib",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "lib items for EasyBackend",
   "types": "./src/build/index.d.ts",
   "directories": {
-    "build": "./src/build",
+    "lib": "src",
     "test": "test"
   },
   "files": [
     "./src/build"
   ],
+    "pkg": {
+    "scripts": [
+      "src/build/**/*.js"
+    ]},
+    "workspaces": [
+      "."
+    ],
   "scripts": {
     "build": "rimraf ./src/build && tsc",
     "lint": "eslint . --ext .js,.ts --fix",
