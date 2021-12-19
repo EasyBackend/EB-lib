@@ -4,7 +4,7 @@ import { GqlProjectTracker } from "../../../../../tracker/graphql/gql-project-tr
 import { getTracker } from "../../../../../tracker/loadTracker.util";
 import { RestProjectTracker } from "../../../../../tracker/restapi/rest-project-tracker";
 import { ValidationRes } from "../../../../../types";
-import { InterfaceStorageType } from "../../../../../types/tracker-storage";
+import { InterfaceStorageType } from "../../../../../types";
 import { getKeysAndTypes } from "../../shared/format/get-keys-and-types";
 
 const checkForSpecialChars = (

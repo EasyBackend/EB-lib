@@ -491,29 +491,9 @@
         "signature": "681b7da64a682cc7b1d3ce840187bbbf7f8f36e8cce20e37fe0126ed26a64a3a",
         "affectsGlobalScope": false
       },
-      "./types/valdiation-res.ts": {
-        "version": "2e43d33e1962da299ee9b8b20605a9eb833d71a054627af6f60d5a96fcb9d954",
-        "signature": "5c6e362b68f6dd94c4c36e3a2ddc3be5554f2e7d4b0d80107a59e7ea6b6fbd7b",
-        "affectsGlobalScope": false
-      },
-      "./types/tracker-storage.ts": {
-        "version": "975fe984a80e6dd22e3cfce6660550a4e88293796e4454bb6d55717493f795f3",
-        "signature": "13c78289b8cf727117b4a6a160322537d11ca0ae77b5493751bf8a7f3ca5149c",
-        "affectsGlobalScope": false
-      },
-      "./types/trackers.ts": {
-        "version": "981f079e083913e3d61b9de108e26582f44d87389489424c04d673627dc5eaeb",
-        "signature": "c57f75d30808770f6a6c210fe5b0bfccd6a059cb54d33482a3404ee98759a321",
-        "affectsGlobalScope": false
-      },
-      "./types/cli-options.ts": {
-        "version": "807de7bfe80fb3bb24f020b89595fb8694a2921017d0f1d37621f7885c48c8f2",
-        "signature": "520e6b30d4dadf1c3eebf38e25e77460486ad952849fae95108143cc4fb6076d",
-        "affectsGlobalScope": false
-      },
       "./types/index.ts": {
-        "version": "985c86b247d9311e0ae316efdd34acb3e15e5fef2362ad8fc02d52ccc7cdc7a4",
-        "signature": "021b942139ed3fdec6ed4b22ce5048c0a4530069b7439e107d733d93dd45ed60",
+        "version": "d5e222f6a5162c61e7c46f3fb9de3a4046436fa4fdf945ab1e239cfeefee3a67",
+        "signature": "e586415756a6189998df6901f04c54bb93636f0c90a09752dd8994c7c365b142",
         "affectsGlobalScope": false
       },
       "./tracker/graphql/gql-project-tracker.ts": {
@@ -533,7 +513,7 @@
       },
       "./tracker/loadtracker.util.ts": {
         "version": "0e500c9598362dd63b4041798751014a1437acacde68d27aac551fa32ffbddb5",
-        "signature": "40f5e591cb92f3cff0c5a68eb9356ed327cb334723316c75763bec4364f36f4f",
+        "signature": "f4cf736141c7d0f4bb3396f5b7ca07688e70481155deee9a04e0000df048601a",
         "affectsGlobalScope": false
       },
       "./controllers/v1/create/shared/format/get-keys-and-types.ts": {
@@ -542,8 +522,8 @@
         "affectsGlobalScope": false
       },
       "./controllers/v1/create/restapi/input-validations/custom-type-validation.ts": {
-        "version": "1b247c4cdea0117ce022c72b57a8b551eadab18e17a3c27e136332ebe0741031",
-        "signature": "f64ed84efa288a9ef38c4c28fb44497451e9359209388819308abb3d291ce5ba",
+        "version": "c3c8093f41c26bf541cc36df3bc4971c58c8193390a1c93f154a214521c137f0",
+        "signature": "63e7bd726f6ecf8dc68680453543f07e2204748539de34ef5755ff170d4ac8a4",
         "affectsGlobalScope": false
       },
       "./controllers/v1/create/restapi/input-validations/database-schema-validation.ts": {
@@ -1164,8 +1144,7 @@
         "./tracker/graphql/gql-project-tracker.ts",
         "./tracker/loadtracker.util.ts",
         "./tracker/restapi/rest-project-tracker.ts",
-        "./types/index.ts",
-        "./types/tracker-storage.ts"
+        "./types/index.ts"
       ],
       "./controllers/v1/create/restapi/input-validations/database-schema-validation.ts": [
         "../node_modules/@types/node/util.d.ts",
@@ -1224,24 +1203,7 @@
         "./tracker/base-tracker.ts",
         "./types/index.ts"
       ],
-      "./types/cli-options.ts": [
-        "../node_modules/@types/node/util.d.ts"
-      ],
       "./types/index.ts": [
-        "../node_modules/@types/node/util.d.ts",
-        "./types/cli-options.ts",
-        "./types/tracker-storage.ts",
-        "./types/trackers.ts",
-        "./types/valdiation-res.ts"
-      ],
-      "./types/tracker-storage.ts": [
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "./types/trackers.ts": [
-        "../node_modules/@types/node/util.d.ts",
-        "./types/index.ts"
-      ],
-      "./types/valdiation-res.ts": [
         "../node_modules/@types/node/util.d.ts"
       ]
     },
@@ -1765,15 +1727,6 @@
       "./tracker/restapi/rest-project-tracker.ts": [
         "./tracker/base-tracker.ts",
         "./types/index.ts"
-      ],
-      "./types/index.ts": [
-        "./types/cli-options.ts",
-        "./types/tracker-storage.ts",
-        "./types/trackers.ts",
-        "./types/valdiation-res.ts"
-      ],
-      "./types/trackers.ts": [
-        "./types/index.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1894,11 +1847,7 @@
       "./tracker/graphql/gql-project-tracker.ts",
       "./tracker/loadtracker.util.ts",
       "./tracker/restapi/rest-project-tracker.ts",
-      "./types/cli-options.ts",
-      "./types/index.ts",
-      "./types/tracker-storage.ts",
-      "./types/trackers.ts",
-      "./types/valdiation-res.ts"
+      "./types/index.ts"
     ]
   },
   "version": "4.2.4"

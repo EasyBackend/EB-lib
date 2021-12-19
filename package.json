@@ -3,12 +3,12 @@
   "version": "1.2.0",
   "description": "lib items for EasyBackend",
   "main": ".commitlint.config.js",
-  "types": "src/build/index.d.ts",
+  "types": "./src/build/index.d.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "build": "rm -rf ./build && tsc",
+    "build": "rimraf ./src/build && tsc",
     "lint": "eslint . --ext .js,.ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
