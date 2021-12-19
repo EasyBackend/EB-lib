@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "lib items for EasyBackend",
   "main": ".commitlint.config.js",
-  "types": "build/index.d.ts",
+  "types": "src/build/index.d.ts",
   "directories": {
     "test": "test"
   },
