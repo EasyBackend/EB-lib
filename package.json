@@ -7,6 +7,9 @@
   "directories": {
     "test": "test"
   },
+  "files": [
+    "./src/build"
+  ],
   "scripts": {
     "build": "rimraf ./src/build && tsc",
     "lint": "eslint . --ext .js,.ts --fix",
