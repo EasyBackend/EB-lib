@@ -1,6 +1,6 @@
 {
   "name": "eb-lib",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "lib items for EasyBackend",
   "main": ".commitlint.config.js",
   "types": "src/build/index.d.ts",
