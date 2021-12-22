@@ -1,6 +1,6 @@
 {
   "name": "eb-lib",
-  "version": "1.19.0",
+  "version": "1.17.0",
   "description": "lib items for EasyBackend",
   "types": "./src/build/index.d.ts",
   "directories": {
@@ -19,7 +19,7 @@
     "build": "rimraf ./src/build && tsc",
     "commit:publish:minor": "ts-node ./scripts/format-lint-test && ts-node ./scripts/git-add && ts-node ./scripts/commit && ts-node ./scripts/publish-minor",
     "format:lint:test": "ts-node ./scripts/format-lint-test",
-    "commit": "ts-node ./scripts/git-add && ts-node ./scripts/commit.ts",
+    "commit":"ts-node ./scripts/git-add && ts-node ./scripts/commit.ts",
     "publish:minor": "ts-node ./scripts/publish-minor",
     "test": "echo 'test'",
     "test:coverage": "jest --coverage",
@@ -29,7 +29,6 @@
     "format:changes": "./scripts/format/prettier-changes.sh",
     "lint": "eslint ./src --ext .js,.ts --fix",
     "lint:js": "eslint --color --cache '**/*.{js,ts}'",
-    "lint:ts": "tsc --noEmit && eslint --cache --cache-location .eslintcache-ts --color {src,scripts/js/{!(build)}}/**/*.ts",
     "lint:formatting": "prettier --check '**/*.{js,ts,json,yaml,yml,md}'",
     "watch": "npm run build -- --watch"
   },
