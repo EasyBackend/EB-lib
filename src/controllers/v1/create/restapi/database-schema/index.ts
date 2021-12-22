@@ -9,7 +9,7 @@ import { createTextDatabaseSchema } from "./transform-input/toTextDatabaseSchema
    @param uniqueProperty if there is a unique property for the schema.
    @param requiredProps properties that are 'required: true '
  */
-const validateAndCreateDatabaseSchema = async (schemaCreationParams: {
+export const validateAndCreateDatabaseSchema = async (schemaCreationParams: {
   schemaProps: string[];
   schemaName: string;
   uniqueProperty: string;

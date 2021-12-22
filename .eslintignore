@@ -1,4 +1,3 @@
 node_modules/
-example
 src/build
-src/templates
+.vscode
