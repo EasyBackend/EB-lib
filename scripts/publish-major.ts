@@ -1,10 +1,11 @@
-import inquirer from "inquirer";
-import { commitQuestions } from "../assets/prompts/commit";
-
 const execPublishMinor = require("child_process").execSync;
 
-const minorMessage = async () => {
-  "publish minor version - " + (await inquirer.prompt([commitQuestions]));
+const minorMessage = () => {
+  const arg = process.argv[2];
+
+  if (!arg) throw Error("No commit message! aborting.");
+
+  return "publish minor version - " + process.argv[2];
 };
 
 execPublishMinor(
