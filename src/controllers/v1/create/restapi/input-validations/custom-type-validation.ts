@@ -1,7 +1,7 @@
 import Logger from '../../../../../logger/logger'
 import { getAllAllowedTypesFromTracker } from '../../../../../tracker/base-tracker'
 import { GqlProjectTracker } from '../../../../../tracker/graphql/gql-project-tracker'
-import { getTracker } from '../../../../../tracker/loadTracker.util'
+import { getTracker } from '../../../../../tracker/load-tracker'
 import { RestProjectTracker } from '../../../../../tracker/restapi/rest-project-tracker'
 import { ValidationRes, InterfaceStorageType } from '../../../../../types'
 import { getKeysAndTypes } from '../../shared/format/get-keys-and-types'
