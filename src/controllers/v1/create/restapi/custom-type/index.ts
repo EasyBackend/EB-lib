@@ -7,7 +7,7 @@ import { createTextInterface } from './transform-input'
  * @param typeProps a string array of typeProps, example: [seasons: int, actors: string[]]
  * @param typeName the name of the custom type, example: tvShow
  */
-const validateAndCreateCustomType = async (customTypeParams: { typeProps: string[]; typeName: string }) => {
+export const validateAndCreateCustomType = async (customTypeParams: { typeProps: string[]; typeName: string }) => {
   const { isValid, message } = await validateCustomTypeBeforeCreation(customTypeParams)
   if (isValid === ValidationRes.VALID) {
     await doCreateCustomType(customTypeParams)
@@ -28,5 +28,3 @@ const doCreateCustomType = async (customTypePropParams: { typeProps: string[]; t
   const textInterface = createTextInterface(customTypePropParams)
   Logger.info(textInterface)
 }
-
-export default validateAndCreateCustomType
