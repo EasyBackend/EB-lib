@@ -19,4 +19,18 @@ export { allowedTypes } from './allowed-types'
 /**
  * @types
  */
-export * as types from './types'
+export {
+  InterfaceStorageType,
+  TrackerStorageTypes,
+  ITrackerStorage,
+  Types,
+  Language,
+  Implementaion,
+  IGqlConfig,
+  IRestConfig,
+  IRestTracker,
+  IDB,
+  IGQLTracker,
+  ITrackerHistory,
+  ValidationRes,
+} from './types'
