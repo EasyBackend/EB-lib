@@ -1,6 +1,6 @@
 {
   "name": "eb-lib",
-  "version": "1.20.0",
+  "version": "1.21.0",
   "description": "lib items for EasyBackend",
   "types": "./src/build/index.d.ts",
   "directories": {
@@ -29,7 +29,7 @@
     "format:changes": "./scripts/format/prettier-changes.sh",
     "lint": "eslint ./src --ext .js,.ts --fix",
     "lint:js": "eslint --color --cache '**/*.{js,ts}'",
-    "lint:ts":"tsc --noEmit && npm run lint",
+    "lint:ts": "tsc --noEmit && npm run lint",
     "lint:formatting": "prettier --check '**/*.{js,ts,json,yaml,yml,md}'",
     "watch": "npm run build -- --watch"
   },
