@@ -17,9 +17,7 @@
   ],
   "scripts": {
     "build": "rimraf ./src/build && tsc",
-    "publish:minor": "ts-node ./scripts/publish-minor",
-    "publish:major": "ts-node ./scripts/publish-major",
-    "prompt:commit": "inquirer.prompt([./assets/prompts/commit])",
+    "publish:minor": "ts-node ./scripts/format-lint-test && ts-node ./scripts/git-add && ts-node ./scripts/commit-publish-minor",
     "test": "echo 'test'",
     "test:coverage": "jest --coverage",
     "release": "standard-version",
