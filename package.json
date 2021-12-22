@@ -1,15 +1,12 @@
 {
   "name": "eb-lib",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "lib items for EasyBackend",
   "types": "./src/build/index.d.ts",
   "directories": {
     "lib": "src",
     "test": "test"
   },
-  "files": [
-    "src/build/**/*"
-  ],
   "pkg": {
     "scripts": [
       "src/build/**/*.js"
