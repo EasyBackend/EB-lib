@@ -1,1 +1,1 @@
-export { validateAndCreateDatabaseSchema } from "./database-schema";
+export { validateAndCreateDatabaseSchema } from './database-schema'

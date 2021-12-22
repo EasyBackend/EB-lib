@@ -1,80 +1,80 @@
 export interface IMainOptions {
-  git: boolean;
-  template: string;
-  runInstall: boolean;
-  targetDirectory: string;
-  templateDirectory: string;
-  databaseTemplateDir: string;
-  database: string;
-  projectName: string;
-  databaseUri?: string;
-  implementation: string;
-  level: string;
+  git: boolean
+  template: string
+  runInstall: boolean
+  targetDirectory: string
+  templateDirectory: string
+  databaseTemplateDir: string
+  database: string
+  projectName: string
+  databaseUri?: string
+  implementation: string
+  level: string
 }
 export enum DatabaseStorageType {
-  schemaName = "schemaName",
-  schemaProps = "schemaProps",
-  requiredProps = "requiredProps",
-  confirmSchemaCreation = "confirmSchemaCreation",
-  uniqueProperty = "uniqueProperty",
+  schemaName = 'schemaName',
+  schemaProps = 'schemaProps',
+  requiredProps = 'requiredProps',
+  confirmSchemaCreation = 'confirmSchemaCreation',
+  uniqueProperty = 'uniqueProperty',
 }
 
 export enum InterfaceStorageType {
-  typeName = "typeCreationName",
-  typeCreationProps = "typeCreationProps",
-  confirmTypeCreation = "confirmTypeCreation",
-  includeDBSchema = "includeDBSchema",
-  uniqueProperty = "uniqueProperty",
+  typeName = 'typeCreationName',
+  typeCreationProps = 'typeCreationProps',
+  confirmTypeCreation = 'confirmTypeCreation',
+  includeDBSchema = 'includeDBSchema',
+  uniqueProperty = 'uniqueProperty',
 }
 
-export type TrackerStorageTypes = InterfaceStorageType | DatabaseStorageType;
+export type TrackerStorageTypes = InterfaceStorageType | DatabaseStorageType
 export interface ITrackerStorage {
-  key: TrackerStorageTypes;
-  value: any;
+  key: TrackerStorageTypes
+  value: any
 }
 
-export type Types = "N/A" | string[];
-export type Language = "typescript" | "javascript";
-export type Implementaion = "gql" | "rest";
+export type Types = 'N/A' | string[]
+export type Language = 'typescript' | 'javascript'
+export type Implementaion = 'gql' | 'rest'
 
 interface IAllowedTypes {
-  arrayTypes: string[];
-  primitiveTypes: string[];
-  objectTypes: string[];
-  customTypes: string[];
+  arrayTypes: string[]
+  primitiveTypes: string[]
+  objectTypes: string[]
+  customTypes: string[]
 }
 interface IBaseConfig {
-  opts: Omit<IMainOptions, "databaseUri">;
-  plugins: string[];
-  allowedTypes: IAllowedTypes;
+  opts: Omit<IMainOptions, 'databaseUri'>
+  plugins: string[]
+  allowedTypes: IAllowedTypes
 }
 
 export interface IGqlConfig extends IBaseConfig {
-  resolvers: string[];
-  typeDefs: string[];
+  resolvers: string[]
+  typeDefs: string[]
 }
 export interface IRestConfig extends IBaseConfig {
-  routes: string[];
-  middlewares: string[];
+  routes: string[]
+  middlewares: string[]
 }
 
 export interface IRestTracker {
-  config: IRestConfig;
+  config: IRestConfig
 }
 
 export interface IDB {
-  database: string;
-  schemas: string[];
+  database: string
+  schemas: string[]
 }
 
 export interface IGQLTracker {
-  config: IGqlConfig;
+  config: IGqlConfig
 }
 
 export interface ITrackerHistory {
-  history: Function;
-  get: Function;
-  goBack: Function;
+  history: Function
+  get: Function
+  goBack: Function
 }
 export enum ValidationRes {
   INVALID = 0,

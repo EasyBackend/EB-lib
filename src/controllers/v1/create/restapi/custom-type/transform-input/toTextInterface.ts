@@ -1,17 +1,11 @@
-export const createTextInterface = ({
-  typeProps,
-  typeName,
-}: {
-  typeProps: string[];
-  typeName: string;
-}) => {
-  const declaration = `export interface I${typeName}`;
+export const createTextInterface = ({ typeProps, typeName }: { typeProps: string[]; typeName: string }) => {
+  const declaration = `export interface I${typeName}`
 
   const interfaceBody = `{
         ${typeProps}
-    }`;
+    }`
 
-  const textInterface = declaration + interfaceBody;
+  const textInterface = declaration + interfaceBody
 
-  return textInterface;
-};
+  return textInterface
+}
