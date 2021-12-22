@@ -29,6 +29,7 @@
     "format:changes": "./scripts/format/prettier-changes.sh",
     "lint": "eslint ./src --ext .js,.ts --fix",
     "lint:js": "eslint --color --cache '**/*.{js,ts}'",
+    "lint:ts":"tsc --noEmit && npm run lint",
     "lint:formatting": "prettier --check '**/*.{js,ts,json,yaml,yml,md}'",
     "watch": "npm run build -- --watch"
   },
