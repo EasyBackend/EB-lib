@@ -1,9 +1,9 @@
 /**
  * @trackers
  */
-export * as BaseTracker from './tracker/base-tracker'
-export * as GqlProjectTracker from './tracker/graphql/gql-project-tracker'
-export * as RestProjectTracker from './tracker/restapi/rest-project-tracker'
+export { BaseTracker } from './tracker/base-tracker'
+export { GqlProjectTracker } from './tracker/graphql/gql-project-tracker'
+export { RestProjectTracker } from './tracker/restapi/rest-project-tracker'
 
 /**
  * @creators
