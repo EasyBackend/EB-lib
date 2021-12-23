@@ -12,6 +12,7 @@
       "src/build/**/*.js"
     ]
   },
+  "main": "src/index.ts",
   "workspaces": [
     "."
   ],
@@ -27,7 +28,7 @@
     "clean": "npx rimraf node_modules src/build .eslintcache",
     "format": "prettier --write ./src/**/*.{js,ts,json,yaml,yml,md}",
     "format:changes": "./scripts/format/prettier-changes.sh",
-    "lint": "eslint ./src --ext .js,.ts --fix",
+    "lint": "eslint . --ext .js,.ts --fix && npm run format",
     "lint:js": "eslint --color --cache '**/*.{js,ts}'",
     "lint:ts": "tsc --noEmit && npm run lint",
     "watch": "npm run build -- --watch"
